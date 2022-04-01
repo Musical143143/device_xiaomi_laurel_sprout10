@@ -32,12 +32,12 @@ LOCAL_OVERRIDES_PACKAGES := \
 	PixelWallpapers2021 \
 	PrebuiltGmail \
 	RecorderPrebuilt \
-	SafetyHubPrebuilt
+	SafetyHubPrebuilt \
 	ScribePrebuilt \
 	Showcase \
 	SoundAmplifierPrebuilt \
 	SprintDM \
-	SprintHM
+	SprintHM \
 	Tycho \
 	USCCDM \
 	VZWAPNLib \
