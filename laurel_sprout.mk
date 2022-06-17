@@ -24,6 +24,10 @@
 # Inherit props
 $(call inherit-product, $(LOCAL_PATH)/props.mk)
 
+# Ambient Display
+PRODUCT_PACKAGES += \
+    XiaomiDoze
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
