@@ -4,7 +4,6 @@ persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
 
 # Charger
-ro.charger.disable_init_blank=true
 ro.charger.enable_suspend=true
 
 # CNE
