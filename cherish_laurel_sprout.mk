@@ -29,6 +29,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 EXTRA_UDFPS_ANIMATIONS := true
 HAS_FOD := true
+EXTRA_FOD_ANIMATIONS := true
 
 # FaceUnlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -67,3 +68,4 @@ WITH_GMS := true
 
 # Quick tap
 TARGET_SUPPORTS_QUICK_TAP := true
+$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)

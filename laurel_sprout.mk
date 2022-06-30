@@ -120,12 +120,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD:laurel_sprout.mk
     libstdc++.vendor \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
-    GCamGo
-=======
+    GCamGo \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
@@ -134,7 +132,6 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     libcamera2ndk_vendor \
     libdng_sdk.vendor
->>>>>>> 679cfe82 (laurel_sprout: drop some prebuilt camera blobs and build their OSS variants):device.mk
 
 # Charger
 PRODUCT_PACKAGES += \
