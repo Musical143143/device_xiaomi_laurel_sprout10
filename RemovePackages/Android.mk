@@ -27,7 +27,6 @@ LOCAL_OVERRIDES_PACKAGES := \
 	NgaResources \
 	OBDM_Permissions \
 	OemDmTrigger \
-	Photos \
 	PixelLiveWallpaperPrebuilt \
 	PixelWallpapers2021 \
 	PrebuiltGmail \
@@ -44,8 +43,6 @@ LOCAL_OVERRIDES_PACKAGES := \
 	VzwOmaTriger \
         AmbientSensePrebuilt \
         arcore \
-        Chrome \
-        Chrome-Stub \
         ConnMO \
         ConnMetrics \
         DCMO \
