@@ -19,24 +19,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common CherishOs stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common ArcanaOs stuff
+$(call inherit-product, vendor/aosp/config/common.mk)
 
-# Cherish Official
-CHERISH_BUILD_TYPE := OFFICIAL
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=RAYAN(BASUBHAJANTRI)
+# Arcana Official
+ARCANA_BUILD_TYPE := OFFICIAL
+
+# maintainer flag
+ARCANA_MAINTAINER := BASUBHAJANTRI
 
 EXTRA_UDFPS_ANIMATIONS := true
 HAS_FOD := true
-EXTRA_FOD_ANIMATIONS := true
 
 # FaceUnlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 
 # Pixel charging animation
-TARGET_INCLUDE_PIXEL_CHARGER := true
+USE_PIXEL_CHARGER_IMAGES := true
 
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
@@ -48,7 +48,7 @@ $(call inherit-product, $(LOCAL_PATH)/laurel_sprout.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := cherish_laurel_sprout
+PRODUCT_NAME := aosp_laurel_sprout
 PRODUCT_MODEL := Mi A3
 
 
@@ -64,8 +64,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Gapps build
-WITH_GMS := true
+WITH_GAPPS := true
 
 # Quick tap
 TARGET_SUPPORTS_QUICK_TAP := true
-$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+TARGET_SUPPORTS_BLUR := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_NOW_PLAYING := true
